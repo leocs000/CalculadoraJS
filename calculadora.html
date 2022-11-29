@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LCS - Calculadora</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="javaScript/calc.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			font-family: serif;
+		}
+		body{
+			background-image: url(wormz.png);
+		}
+		.container{
+			background-color: #fd6766;
+			margin-top: 200px;
+			margin-left: 40%;
+			width: 253px;
+			box-shadow: 0px 5px 30px black;
+		}
+		.botao{
+			width: 60px;
+			height: 60px;
+			background-color: #fd6766;
+			border: none;
+			font-size: 20px;
+		}
+		.botaoOP{
+			width: 60px;
+			height: 60px;
+			background-color: #ff9393;
+			border: none;
+			font-size: 20px;
+		}
+		.botaoIG{
+			width: 60px;
+			height: 60px;
+			background-color: #f31415;
+			border: none;
+			font-size: 20px;
+		}
+		.Visor{
+			background-color: #fd6766;
+			border: none;
+			width: 90%;
+			height: 40px;
+			margin-left: 5%;
+			margin-top: 19px;
+			text-align: right;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+		<div class="container">
+			<input class="Visor" id="visor" type="text" placeholder="0" />
+			<br/>
+			<hr>
+			<input class="botao" type="button" value=" " onclick="Botao(value);" />
+			<input class="botao" type="button" value="C" onclick="Limpar();" />
+			<input class="botao" type="button" value="<" onclick="Apg(value);" />
+
+			<br/>
+
+			<input class="botao" type="button" value="7" onclick="Botao(value);" />
+			<input class="botao" type="button" value="8" onclick="Botao(value);" />
+			<input class="botao" type="button" value="9" onclick="Botao(value);" />
+			<button class="botaoOP" type="button" value="*" onclick="Botao(value);" >x</button>
+
+			<br/>
+			<input class="botao" type="button" value="4" onclick="Botao(value);" />
+			<input class="botao" type="button" value="5" onclick="Botao(value);" />
+			<input class="botao" type="button" value="6" onclick="Botao(value);" />
+			<input class="botaoOP" type="button" value="-" onclick="Botao(value);" />
+
+			<br/>
+
+			<input class="botao" type="button" value="1" onclick="Botao(value);" />
+			<input class="botao" type="button" value="2" onclick="Botao(value);" />
+			<input class="botao" type="button" value="3" onclick="Botao(value);" />
+			<input class="botaoOP" type="button" value="+" onclick="Botao(value);" />
+
+			<br/>
+
+			<input class="botao" type="button" value="." onclick="Botao(value);" />
+			<input class="botao" type="button" value="0" onclick="Botao(value);" />
+			<input class="botaoIG" type="button" value="=" onclick="Resultado();" />
+			<input class="botaoOP" type="button" value="/" onclick="Botao(value);" />
+		
+		</div>
+
+</body>
+</html>
